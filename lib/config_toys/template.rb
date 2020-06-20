@@ -2,15 +2,15 @@
 
 require 'toys-core'
 
-module FlameConfigToys
+module ConfigToys
 	## Define toys for benchmark
 	class Template
 		include Toys::Template
 
-		attr_reader :application
+		attr_reader :config_dir
 
-		def initialize(application:)
-			@application = application
+		def initialize(config_dir:)
+			@config_dir = config_dir
 		end
 
 		on_expand do |template|
@@ -23,15 +23,11 @@ module FlameConfigToys
 
 						# require "#{context_directory}/config/config"
 
-						example_files(template.application).each(&:actualize_regular_file)
+						require 'example_file'
+						ExampleFile.all(template.config_dir).each(&:actualize_regular_file)
 					end
 
 					private
-
-					def example_files(application)
-						require 'example_file'
-						ExampleFile.all application.config[:config_dir]
-					end
 
 					def check_editor_environment_variable
 						return unless ENV['EDITOR'].to_s.empty?

@@ -10,4 +10,4 @@ if ENV['CODECOV_TOKEN']
 	SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
 
-require_relative '../lib/flame_config_toys'
+require_relative '../lib/config_toys'

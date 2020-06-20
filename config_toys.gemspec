@@ -1,22 +1,22 @@
 # frozen_string_literal: true
 
-require_relative 'lib/flame_config_toys/version'
+require_relative 'lib/config_toys/version'
 
 Gem::Specification.new do |spec|
-	spec.name          = 'flame_config_toys'
-	spec.version       = FlameConfigToys::VERSION
+	spec.name          = 'config_toys'
+	spec.version       = ConfigToys::VERSION
 	spec.authors       = ['Alexander Popov']
 	spec.email         = ['alex.wayfer@gmail.com']
 
-	spec.summary       = 'Toys template for Flame application config.'
+	spec.summary       = 'Toys template for applications configuration.'
 	spec.description   = <<~DESC
-		Toys template for Flame application config.
+		Toys template for applications configuration.
 	DESC
 	spec.license = 'MIT'
 
 	spec.required_ruby_version = '>= 2.5'
 
-	source_code_uri = 'https://github.com/AlexWayfer/flame_config_toys'
+	source_code_uri = 'https://github.com/AlexWayfer/config_toys'
 
 	spec.homepage = source_code_uri
 
@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
 	spec.metadata['homepage_uri'] = spec.homepage
 
 	spec.metadata['changelog_uri'] =
-		'https://github.com/AlexWayfer/flame_config_toys/blob/master/CHANGELOG.md'
+		'https://github.com/AlexWayfer/config_toys/blob/master/CHANGELOG.md'
 
 	spec.files = Dir['lib/**/*.rb', 'README.md', 'LICENSE.txt', 'CHANGELOG.md']
 

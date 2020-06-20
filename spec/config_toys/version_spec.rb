@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe 'FlameConfigToys::VERSION' do
+describe 'ConfigToys::VERSION' do
 	subject { Object.const_get(self.class.description) }
 
 	it { is_expected.to match(/\d+\.\d+\.\d+/) }

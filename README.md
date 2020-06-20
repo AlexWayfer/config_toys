@@ -1,14 +1,14 @@
-# Flame Config Toys
+# Config Toys
 
-Toys template for [Flame](https://github.com/AlexWayfer/flame)
-application config.
+Toys template for applications configuration,
+like [Flame](https://github.com/AlexWayfer/flame), but not necessarily.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'flame_config_toys'
+gem 'config_toys'
 ```
 
 And then execute:
@@ -20,14 +20,15 @@ bundle install
 Or install it yourself as:
 
 ```shell
-gem install flame_config_toys
+gem install config_toys
 ```
 
 ## Usage
 
 ```ruby
-require 'flame_config_toys'
-expand FlameConfigToys::Template, application: MyProject::Application
+require 'config_toys'
+expand ConfigToys::Template,
+  config_dir: MyProject::Application.config[:config_dir]
 ```
 
 ## Development
@@ -43,7 +44,7 @@ to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on [GitHub](https://github.com/AlexWayfer/flame_config_toys).
+Bug reports and pull requests are welcome on [GitHub](https://github.com/AlexWayfer/config_toys).
 
 ## License
 
