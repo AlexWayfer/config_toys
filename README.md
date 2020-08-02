@@ -34,9 +34,9 @@ gem install config_toys
 ## Usage
 
 ```ruby
+## .toys/.toys.rb
 require 'config_toys'
-expand ConfigToys::Template,
-  config_dir: MyProject::Application.config[:config_dir]
+expand ConfigToys::Template, config_dir: "#{__dir__}/../config"
 ```
 
 ## Development
