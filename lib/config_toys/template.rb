@@ -19,20 +19,8 @@ module ConfigToys
 					desc 'Check config files'
 
 					to_run do
-						check_editor_environment_variable
-
-						# require "#{context_directory}/config/config"
-
 						require 'example_file'
 						ExampleFile.all(template.config_dir).each(&:actualize_regular_file)
-					end
-
-					private
-
-					def check_editor_environment_variable
-						return unless ENV['EDITOR'].to_s.empty?
-
-						abort '`EDITOR` environment variable is empty, see README'
 					end
 				end
 			end
