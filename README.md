@@ -36,6 +36,7 @@ gem install config_toys
 ```ruby
 ## .toys/.toys.rb
 require 'config_toys'
+## `:config_dir` can be a String or a Proc, default is `-> { "#{context_directory}/config" }`
 expand ConfigToys::Template, config_dir: "#{__dir__}/../config"
 ```
 
