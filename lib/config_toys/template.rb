@@ -18,11 +18,26 @@ module ConfigToys
 				tool :check do
 					desc 'Check config files'
 
+					self::ADDITIONAL_CHOICES = {
+						skip: -> { puts "#{@regular_basename} remains unchanged" },
+						quit: -> { exit }
+					}.freeze
+
+					self::SEPARATOR = <<~SEPARATOR
+
+						---
+
+					SEPARATOR
+
 					to_run do
 						require 'example_file'
 						config_dir = template.config_dir
 						config_dir = instance_exec(&config_dir) if config_dir.is_a? Proc
-						ExampleFile.all(config_dir).each(&:actualize_regular_file)
+						ExampleFile.all(config_dir).each_with_index do |example_file, index|
+							example_file.choices.merge! self.class::ADDITIONAL_CHOICES
+							example_file.question_prefix = self.class::SEPARATOR if index.positive?
+							example_file.actualize_regular_file
+						end
 					end
 				end
 			end
