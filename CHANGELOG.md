@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## 0.4.0 (2021-10-18)
+
+*   Add default for `:config_dir`.
+*   Add `skip` and `quit` answers.
+*   Add Ruby 3.0 for CI.
+*   Add `bundle-audit` CI task.
+*   Update development dependencies.
+
 ## 0.3.0 (2020-09-30)
 
 *   Move check for `EDITOR` environment variable inside `example_file`.
