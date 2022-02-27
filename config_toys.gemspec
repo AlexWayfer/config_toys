@@ -33,13 +33,13 @@ Gem::Specification.new do |spec|
 	spec.files = Dir['lib/**/*.rb', 'README.md', 'LICENSE.txt', 'CHANGELOG.md']
 
 	spec.add_runtime_dependency 'example_file', '~> 0.3.0'
-	spec.add_runtime_dependency 'toys-core', '~> 0.12.0'
+	spec.add_runtime_dependency 'toys-core', '~> 0.13.0'
 
 	spec.add_development_dependency 'pry-byebug', '~> 3.9'
 
 	spec.add_development_dependency 'bundler', '~> 2.0'
 	spec.add_development_dependency 'gem_toys', '~> 0.11.0'
-	spec.add_development_dependency 'toys', '~> 0.12.0'
+	spec.add_development_dependency 'toys', '~> 0.13.0'
 
 	spec.add_development_dependency 'bundler-audit', '~> 0.9.0'
 
