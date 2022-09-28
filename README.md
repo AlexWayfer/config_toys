@@ -1,11 +1,11 @@
 # Config Toys
 
 ![Cirrus CI - Base Branch Build Status](https://img.shields.io/cirrus/github/AlexWayfer/config_toys?style=flat-square)
-[![Codecov branch](https://img.shields.io/codecov/c/github/AlexWayfer/config_toys/master.svg?style=flat-square)](https://codecov.io/gh/AlexWayfer/config_toys)
+[![Codecov branch](https://img.shields.io/codecov/c/github/AlexWayfer/config_toys/main.svg?style=flat-square)](https://codecov.io/gh/AlexWayfer/config_toys)
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/AlexWayfer/config_toys.svg?style=flat-square)](https://codeclimate.com/github/AlexWayfer/config_toys)
 ![Depfu](https://img.shields.io/depfu/AlexWayfer/config_toys?style=flat-square)
-[![Inline docs](https://inch-ci.org/github/AlexWayfer/config_toys.svg?branch=master)](https://inch-ci.org/github/AlexWayfer/config_toys)
-[![license](https://img.shields.io/github/license/AlexWayfer/config_toys.svg?style=flat-square)](https://github.com/AlexWayfer/config_toys/blob/master/LICENSE.txt)
+[![Inline docs](https://inch-ci.org/github/AlexWayfer/config_toys.svg?branch=main)](https://inch-ci.org/github/AlexWayfer/config_toys)
+[![license](https://img.shields.io/github/license/AlexWayfer/config_toys.svg?style=flat-square)](https://github.com/AlexWayfer/config_toys/blob/main/LICENSE.txt)
 [![Gem](https://img.shields.io/gem/v/config_toys.svg?style=flat-square)](https://rubygems.org/gems/config_toys)
 
 Toys template for applications configuration,
