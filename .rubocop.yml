@@ -36,6 +36,9 @@ Layout/MultilineHashBraceLayout:
   EnforcedStyle: new_line
 
 Metrics/BlockLength:
+  AllowedMethods:
+    - on_expand
+    - tool
   Exclude:
     - '*.gemspec'
     - spec/**/*.rb
