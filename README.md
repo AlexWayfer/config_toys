@@ -5,8 +5,8 @@
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/AlexWayfer/config_toys.svg?style=flat-square)](https://codeclimate.com/github/AlexWayfer/config_toys)
 ![Depfu](https://img.shields.io/depfu/AlexWayfer/config_toys?style=flat-square)
 [![Inline docs](https://inch-ci.org/github/AlexWayfer/config_toys.svg?branch=main)](https://inch-ci.org/github/AlexWayfer/config_toys)
-[![license](https://img.shields.io/github/license/AlexWayfer/config_toys.svg?style=flat-square)](https://github.com/AlexWayfer/config_toys/blob/main/LICENSE.txt)
 [![Gem](https://img.shields.io/gem/v/config_toys.svg?style=flat-square)](https://rubygems.org/gems/config_toys)
+[![License](https://img.shields.io/github/license/AlexWayfer/config_toys.svg?style=flat-square)](LICENSE.txt)
 
 Toys template for applications configuration,
 like [Flame](https://github.com/AlexWayfer/flame), but not necessarily.
