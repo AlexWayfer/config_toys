@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## 0.6.0 (2022-09-29)
+
+*   Add `initialize` (`init`) toy.
+    Useful for initial project generation.
+*   Update development dependencies.
+*   Improve CI.
+
 ## 0.5.0 (2022-03-03)
 
 *   Drop Ruby 2.5 support.
