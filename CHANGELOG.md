@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 0.7.0 (2022-10-22)
+
+*   Update `toys` and `toys-core`.
+*   Update `rubocop`.
+
 ## 0.6.0 (2022-09-29)
 
 *   Add `initialize` (`init`) toy.
