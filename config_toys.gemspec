@@ -32,6 +32,6 @@ Gem::Specification.new do |spec|
 
 	spec.files = Dir['lib/**/*.rb', 'README.md', 'LICENSE.txt', 'CHANGELOG.md']
 
-	spec.add_dependency 'example_file', '~> 0.5.0'
+	spec.add_dependency 'example_file', '~> 1.0'
 	spec.add_dependency 'toys-core', '~> 0.19.0'
 end
